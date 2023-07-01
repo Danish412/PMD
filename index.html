@@ -91,6 +91,29 @@
 
         <h2>Contact</h2>
         <p>Let's talk and make the right Power BI Reports</p>
+            <script>
+        // Create a link element
+        var linkElement = document.createElement('a');
+
+        // Set the href attribute of the link
+        linkElement.href = 'https://www.linkedin.com/in/muhammad-danish-sarwar';
+
+        // Create an icon element
+        var iconElement = document.createElement('i');
+
+        // Set the classes for the icon (using Font Awesome)
+        iconElement.classList.add('fas', 'fa-link');
+
+        // Set the text content of the link
+        linkElement.textContent = 'Click me!';
+
+        // Append the icon element before the link text
+        linkElement.insertBefore(iconElement, linkElement.firstChild);
+
+        // Append the link element to the link container
+        var linkContainer = document.getElementById('linkContainer');
+        linkContainer.appendChild(linkElement);
+    </script>
     </main>
     <footer>
         <p>&copy; 2023 Muhammad Danish Sarwar | Power BI</p>
