@@ -33,13 +33,11 @@
             width: 100%;
             height: 500px;
         }
+        .portfolio-image {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
-    <script>
-        // Prevent right-click menu and disable download
-        document.addEventListener('contextmenu', function(event) {
-            event.preventDefault();
-        });
-    </script>
 </head>
 <body>
     <header>
@@ -60,9 +58,8 @@
         <h2>Portfolio</h2>
         <p>Showcase some of your best Power BI projects. Include screenshots, descriptions, and any relevant metrics or achievements. Demonstrate the value you have provided to clients or organizations through your work.</p>
 
-        <h2>Sample PDF</h2>
-        <div class="pdf-container">
-            <embed src="Stores_Report.pdf" width="100%" height="100%" type="application/pdf">
+        <div>
+            <img src="favicon.png" alt="Portfolio Image" class="portfolio-image">
         </div>
 
         <h2>Contact</h2>
