@@ -91,7 +91,16 @@
     });
   </script>
         <h3> Contracting Agency Report - Utopia Office of Grants</h3>
- 
+        <div id="adobe-dc-view" style="width: 800px;"></div>
+<script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
+<script type="text/javascript">
+	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+		var adobeDCView = new AdobeDC.View({clientId: "01d3fe1a92d341119693a358b10bb6b0", divId: "adobe-dc-view"});
+		adobeDCView.previewFile({
+                content: { location: { url: "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:8b5b52fb-8efa-4fe0-b916-d15368bac62b" } },
+                metaData: { fileName: "Horizons.pdf" }
+            }, {});
+</script>
         <h3>A basic Stores Report</h3> 
 
 
