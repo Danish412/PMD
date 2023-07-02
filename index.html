@@ -86,7 +86,17 @@
 
         <h2>Portfolio</h2>
         <p>Custom Sales Reports</p>
-
+ <div id="viewer" style="width: 100%; height: 500px;"></div>
+  <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+  <script>
+    const config = { 
+      documentId: '10961f63-78df-462f-867a-f6e828eec238',
+      darkMode: true, 
+    };
+    CloudPDF(config, document.getElementById('viewer')).then((instance) => {
+      
+    });
+  </script>
 
 
         <div>
