@@ -41,6 +41,7 @@
             height: auto;
         }
     </style>
+ <!--
     <script>
         // Prevent right-click and context menu
         document.addEventListener('contextmenu', function(event) {
@@ -53,6 +54,15 @@
                 event.preventDefault();
             }
         });
+    </script>
+ -->
+       <script type="text/javascript">
+        function disableContextMenu() {
+            window.frames["pdfframe"].contentDocument.oncontextmenu = function(){return true;};   
+            var myFrame = document.getElementById('pdfframe');
+            myFrame.window.eval('document.addEventListener("contextmenu", function (e) {e.preventDefault();}, false)');
+        }
+
     </script>
 </head>
 <body>
@@ -79,19 +89,8 @@
 
         <h2>Power BI Reports</h2>
         <h3>Sales Report of a Clothing Store - Horizons </h3>
-   <script>
-        // Prevent right-click and context menu
-        document.addEventListener('contextmenu', function(event) {
-            event.preventDefault();
-        });
  <embed src="Source Files/config P files/Horizons/Horizons.pdf#toolbar=0" width="100%" height="820">
-        // Prevent screenshot capturing
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'PrintScreen' || event.key === 'F12') {
-                event.preventDefault();
-            }
-        });
-    </script>
+<div class="embed-cover"></div>
        
         <h3> Contracting Agency Report - Utopia Office of Grants</h3>
        
